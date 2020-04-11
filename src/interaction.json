@@ -1,0 +1,283 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "the list guy",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NewListIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "call it {name}",
+                                "uh {name}",
+                                "um {name}",
+                                "go with {name}",
+                                "let's call it {name}",
+                                "name it {name}",
+                                "{name}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add a list named {name}",
+                        "add a new list named {name}",
+                        "new list named {name}",
+                        "create a new list named {name}",
+                        "create a list named {name}",
+                        "start a new list named {name}",
+                        "start a list named {name}",
+                        "make a new list named {name}",
+                        "make a list named {name}",
+                        "add a list",
+                        "add a new list",
+                        "new list",
+                        "create a new list",
+                        "create a list",
+                        "start a new list",
+                        "start a list",
+                        "make a new list",
+                        "make a list"
+                    ]
+                },
+                {
+                    "name": "AddItemIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "add {item} to the list",
+                        "add {item}"
+                    ]
+                },
+                {
+                    "name": "Randomize",
+                    "slots": [],
+                    "samples": [
+                        "randomize the order",
+                        "shuffle the order",
+                        "shuffle everyone",
+                        "shuffle",
+                        "shuffle the list",
+                        "randomize the list",
+                        "randomize"
+                    ]
+                },
+                {
+                    "name": "UseList",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "select {name}",
+                        "go to {name}",
+                        "list {name}",
+                        "open list {name}",
+                        "use list {name}",
+                        "select the list named {name}",
+                        "go to the list named {name}",
+                        "list list named {name}",
+                        "open the list named {name}",
+                        "use the list named {name}",
+                        "select the list called {name}",
+                        "go to the list called {name}",
+                        "list list called {name}",
+                        "open the list called {name}",
+                        "use the list called {name}"
+                    ]
+                },
+                {
+                    "name": "WhatIsFirst",
+                    "slots": [],
+                    "samples": [
+                        "who's first on the list",
+                        "who is first on the list",
+                        "who goes first",
+                        "who is first",
+                        "what's first on the list",
+                        "what is first on the list",
+                        "what goes first",
+                        "what is first"
+                    ]
+                },
+                {
+                    "name": "WhatIsNext",
+                    "slots": [],
+                    "samples": [
+                        "who's next",
+                        "who goes next",
+                        "who is next on the list",
+                        "who is next",
+                        "what's next",
+                        "what's goes next",
+                        "what's is next on the list",
+                        "what's is next"
+                    ]
+                },
+                {
+                    "name": "WhatIsTheOrder",
+                    "slots": [],
+                    "samples": [
+                        "who's on the list",
+                        "who is on the list",
+                        "what is on the list",
+                        "what's on the list",
+                        "what order is it in",
+                        "give me the current list",
+                        "give me the current order",
+                        "read the current list",
+                        "read the list",
+                        "what's the order",
+                        "what is the order",
+                        "what is the current order"
+                    ]
+                },
+                {
+                    "name": "RemoveItem",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "scratch {item} off the list",
+                        "delete {item} from the list",
+                        "delete {item}",
+                        "remove {item} from the list",
+                        "remove {item}"
+                    ]
+                },
+                {
+                    "name": "DeleteList",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "remove list {name}",
+                        "delete list {name}",
+                        "remove the list named {name}",
+                        "delete the list named {name}",
+                        "remove the list called {name}",
+                        "delete the list called {name}"
+                    ]
+                },
+                {
+                    "name": "ClearList",
+                    "slots": [],
+                    "samples": [
+                        "empty the list",
+                        "start the list over",
+                        "start over",
+                        "clear",
+                        "clear the list",
+                        "clear the current list"
+                    ]
+                },
+                {
+                    "name": "HowManyLists",
+                    "slots": [],
+                    "samples": [
+                        "how many lists there are",
+                        "how many lists I have",
+                        "how many lists do we have",
+                        "how many lists do I have",
+                        "how many lists are there"
+                    ]
+                },
+                {
+                    "name": "HowManyItems",
+                    "slots": [],
+                    "samples": [
+                        "how many items are on the list",
+                        "how many things are on the list",
+                        "how many are on the list",
+                        "how many items are there on the list",
+                        "how many things are there on the list",
+                        "how many are there on the list",
+                        "how many items we have on the list",
+                        "how many things we have on the list",
+                        "how many we have on the list",
+                        "count the items on the list"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "NewListIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1510747246905.341630890520"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1510747246905.341630890520",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What should I name this list?"
+                    }
+                ]
+            }
+        ]
+    }
+}
